@@ -1,0 +1,5 @@
+.Features-div {
+  border: solid black 2px;
+  display: flex;
+  flex-direction: row;
+}
