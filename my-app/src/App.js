@@ -3,6 +3,7 @@ import Header from "./header/Header";
 import Features from "./header/Features";
 import Projects from "./body/Projects";
 import Calendly from "./body/Calendly";
+import Footer from "./footer/Footer";
 function App() {
   return (
     <>
@@ -11,6 +12,7 @@ function App() {
       <Features />
       <Projects />
       <Calendly />
+      <Footer />
     </>
   );
 }
