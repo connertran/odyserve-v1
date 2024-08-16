@@ -2,10 +2,11 @@ import "./Header.css";
 function Header() {
   return (
     <div className="Header-div">
-      <h1>Transforming Lessons Into Visual Masterpieces</h1>
+      <h1 className="Header-h1">
+        Transforming Lessons Into Visual Masterpieces
+      </h1>
       <iframe
-        width="560"
-        height="315"
+        className="Header-video"
         src="https://www.youtube.com/embed/qyomWr_C_jA?si=XROTy7o5UGxmxXzG"
         title="Web Design"
         frameBorder="0"

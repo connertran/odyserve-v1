@@ -1,0 +1,21 @@
+.Navbar-logo {
+  width: 70px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.Navbar-div {
+  border: solid white 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+}
+.Navbar-h1 {
+  font-size: 2em;
+  font-family: Inter;
+  color: #fff;
+
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-bottom: 0;
+}

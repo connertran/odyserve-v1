@@ -1,10 +1,11 @@
 import logo from "../pictures/logo.png";
+import "./Navbar.css";
 function Navbar() {
   return (
-    <>
-      <img src={logo} alt="Logo" />
-      <h1>Odyserve</h1>
-    </>
+    <div className="Navbar-div">
+      <img className="Navbar-logo" src={logo} alt="Logo" />
+      <h1 className="Navbar-h1">Odyserve</h1>
+    </div>
   );
 }
 
