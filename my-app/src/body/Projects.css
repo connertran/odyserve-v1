@@ -3,6 +3,7 @@
   width: 100%;
   max-width: 600px;
   margin: auto;
+  margin-top: 20px;
   border: solid black 1px;
 }
 
@@ -47,18 +48,6 @@
   justify-content: center;
 }
 
-/* .Projects-button {
-  position: absolute;
-  display: block;
-  color: white;
-  border: solid blue 2px;
-  border-radius: 20px;
-  top: 0;
-  padding: 20px 50px;
-  height: 100%;
-  width: 250px;
-} */
-
 .carousel-item {
   border: solid white 2px;
   flex: 0 0 auto;
@@ -80,32 +69,31 @@
   border-radius: 10px;
 } */
 
-/* .carousel-controls {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-} */
+.carousel-controls {
+  border: solid white 1px;
+  position: relative;
+  height: 40px;
+}
 
-/* .carousel-controls button {
-  background-color: rgba(0, 0, 0, 0.5);
+/* mobile view doesn't have hover effects */
+.carousel-controls button {
+  background-color: rgba(0, 0, 0, 0);
   border: none;
-  color: white;
-  padding: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 900;
+  font-size: 26px;
+  padding: 0 10px;
   cursor: pointer;
-  transition: background-color 0.3s;
-} */
+}
 
-/* .carousel-controls button:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-} */
-/* .Projects-prev-btn {
+.carousel-controls button:active {
+  color: rgba(255, 255, 255, 1);
+}
+.Projects-prev-btn {
   position: absolute;
-  left: 0;
-} */
-/* .Projects-next-btn {
+  left: 20px;
+}
+.Projects-next-btn {
   position: absolute;
-  right: 0;
-} */
+  right: 20px;
+}

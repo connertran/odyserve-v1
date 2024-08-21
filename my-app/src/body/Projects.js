@@ -3,8 +3,8 @@ import Short from "./Short";
 import "./Projects.css";
 
 function Projects() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [vidStyleNum, setVidStyleNum] = useState(1);
+  const [currentIndex, setCurrentIndex] = useState(1);
+  const [vidStyleNum, setVidStyleNum] = useState(2);
 
   const videos = [
     "https://odyserve.eu-central-1.linodeobjects.com/rich-kid-compare.mp4",
@@ -34,7 +34,6 @@ function Projects() {
 
   return (
     <div className="Projects-div">
-      <h1 className="Projects-h1">Projects</h1>
       <div className="carousel-wrapper">
         <div
           className="carousel"
@@ -50,16 +49,16 @@ function Projects() {
         </div>
       </div>
       <div className="carousel-controls">
-        {currentIndex !== 0 && (
-          <button className="Projects-prev-btn" onClick={prevSlide}>
+        
+          <button className="Projects-prev-btn" onClick={prevSlide} disabled={currentIndex === 0}>
             ❮
           </button>
-        )}
-        {currentIndex !== videos.length - 1 && (
-          <button className="Projects-next-btn" onClick={nextSlide}>
+        
+        
+          <button className="Projects-next-btn" onClick={nextSlide} disabled={currentIndex === videos.length - 1}>
             ❯
           </button>
-        )}
+        
       </div>
     </div>
   );
