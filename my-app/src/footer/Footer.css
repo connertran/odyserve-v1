@@ -1,3 +1,32 @@
 .Footer-div {
-  border: solid black 1px;
+  /* border: solid white 1px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  height: 100px;
+  /* padding-bottom: 20px; */
+  background-color: black;
+}
+
+.Footer-icon-div {
+  /* border: solid yellow 2px; */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 30px;
+  margin-right: 10px;
+}
+.Footer-icon {
+  color: white;
+  font-size: 28px;
+  margin-left: 14px;
+}
+
+.Footer-logo {
+  width: 50px;
+  margin-left: 10px;
+  border: solid white 2px;
+  border-radius: 40px;
 }

@@ -6,16 +6,18 @@ import "./Footer.css";
 function Footer() {
   return (
     <div className="Footer-div">
-      <img src={logo} alt="Logo" />
-      <a href="https://www.instagram.com/odyserve_official/">
-        <FontAwesomeIcon icon={faInstagram} style={{ color: "#B197FC" }} />
-      </a>
-      <a href="https://x.com/odyserve">
-        <FontAwesomeIcon icon={faXTwitter} />
-      </a>
-      <a href="mailto:odyserve@gmail.com">
-        <FontAwesomeIcon icon={faEnvelope} />
-      </a>
+      <img className="Footer-logo" src={logo} alt="Logo" />
+      <div className="Footer-icon-div">
+        <a href="https://www.instagram.com/odyserve_official/">
+          <FontAwesomeIcon className="Footer-icon" icon={faInstagram} />
+        </a>
+        <a href="https://x.com/odyserve">
+          <FontAwesomeIcon className="Footer-icon" icon={faXTwitter} />
+        </a>
+        <a href="mailto:odyserve@gmail.com">
+          <FontAwesomeIcon className="Footer-icon" icon={faEnvelope} />
+        </a>
+      </div>
     </div>
   );
 }

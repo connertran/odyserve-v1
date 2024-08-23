@@ -1,17 +1,23 @@
 .Calendly-div {
   border: solid yellow 2px;
+  margin-top: 40px;
   padding: 0 10px;
 }
-.Calendly-h1, .Calendly-h3{
+.Calendly-h1,
+.Calendly-h3 {
   text-align: center;
   color: white;
   font-family: Inter;
 }
-.Calendly-h1{
+.Calendly-h1 {
   margin-bottom: 0px;
 }
 
-.Calendly-h3{
+.Calendly-h3 {
   margin-top: 10px;
+  margin-bottom: 0px;
 }
 
+.Calendly-widget-div {
+  margin-top: 20px;
+}

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Short from "./Short";
 import "./Projects.css";
 
@@ -11,10 +11,6 @@ function Projects() {
     "https://odyserve.eu-central-1.linodeobjects.com/mrbeast-compare.mp4",
     "https://odyserve.eu-central-1.linodeobjects.com/david-pat-compare.mp4",
   ];
-
-  useEffect(() => {
-    console.log(currentIndex); // This will log the updated value
-  }, [currentIndex]);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => {
@@ -49,16 +45,21 @@ function Projects() {
         </div>
       </div>
       <div className="carousel-controls">
-        
-          <button className="Projects-prev-btn" onClick={prevSlide} disabled={currentIndex === 0}>
-            ❮
-          </button>
-        
-        
-          <button className="Projects-next-btn" onClick={nextSlide} disabled={currentIndex === videos.length - 1}>
-            ❯
-          </button>
-        
+        <button
+          className="Projects-prev-btn"
+          onClick={prevSlide}
+          disabled={currentIndex === 0}
+        >
+          ❮
+        </button>
+
+        <button
+          className="Projects-next-btn"
+          onClick={nextSlide}
+          disabled={currentIndex === videos.length - 1}
+        >
+          ❯
+        </button>
       </div>
     </div>
   );

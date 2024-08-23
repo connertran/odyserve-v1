@@ -42,8 +42,6 @@
 .carousel {
   border: solid red 5px;
   display: flex;
-  /* flex-direction: row; */
-  /* overflow: hidden; */
   transition: transform 0.5s ease-in-out;
   justify-content: center;
 }
@@ -57,17 +55,6 @@
   display: flex;
   justify-content: center;
 }
-/* .carousel-item {
-  border: solid white 2px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-} */
-
-/* .carousel-item video {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 10px;
-} */
 
 .carousel-controls {
   border: solid white 1px;
@@ -91,9 +78,9 @@
 }
 .Projects-prev-btn {
   position: absolute;
-  left: 20px;
+  left: 30%;
 }
 .Projects-next-btn {
   position: absolute;
-  right: 20px;
+  right: 30%;
 }
