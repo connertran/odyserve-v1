@@ -3,7 +3,9 @@ function Header() {
   return (
     <div className="Header-div">
       <h1 className="Header-h1">
-        Transforming Lessons Into Visual Masterpieces
+        <span className="Header-line1">Transforming Lessons</span>
+        <br />
+        <span className="Header-line2">Into Visual Masterpieces</span>
       </h1>
       <iframe
         className="Header-video"

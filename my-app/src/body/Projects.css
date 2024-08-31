@@ -1,5 +1,4 @@
 .Projects-div {
-  /* overflow: hidden; */
   width: 100%;
   max-width: 600px;
   margin: auto;
@@ -83,4 +82,19 @@
 .Projects-next-btn {
   position: absolute;
   right: 30%;
+}
+
+@media (min-width: 680px) {
+  .Projects-div {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 760px) {
+  .Projects-div {
+    margin-top: 60px;
+  }
+  .carousel-controls {
+    margin-top: 10px;
+  }
 }

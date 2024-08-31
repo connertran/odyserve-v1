@@ -30,3 +30,41 @@
   border: solid white 2px;
   border-radius: 40px;
 }
+@media (min-width: 680px) {
+  .Footer-logo {
+    width: 60px;
+    margin-left: 30px;
+  }
+  .Footer-icon {
+    font-size: 33.6px;
+  }
+  .Footer-icon-div {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 760px) {
+  .Footer-logo {
+    width: 70px;
+    margin-left: 50px;
+  }
+  .Footer-icon {
+    font-size: 39.2px;
+  }
+  .Footer-icon-div {
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .Footer-logo {
+    width: 70px;
+    margin-left: 80px;
+  }
+  .Footer-icon {
+    font-size: 39.2px;
+  }
+  .Footer-icon-div {
+    margin-right: 80px;
+  }
+}

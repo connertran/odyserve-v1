@@ -25,3 +25,25 @@
   z-index: 2;
   transition: transform 0.5s ease, filter 0.5s ease;
 }
+
+@media (min-width: 760px) {
+  .Short-video {
+    height: 360px;
+    width: 202.5px;
+    border-radius: 22.5px;
+  }
+  .Short-video.active {
+    border-radius: 33.75px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .Short-video {
+    height: 420px;
+    width: 236.25px;
+    border-radius: 26.25px;
+  }
+  .Short-video.active {
+    border-radius: 39.375px;
+  }
+}

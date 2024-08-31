@@ -7,3 +7,26 @@
   margin-top: 20px;
   padding: 0 20px;
 }
+@media (min-width: 630px) {
+  .Features-div {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 760px) {
+  .Features-div {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .Features-middle {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .Features-middle {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+}

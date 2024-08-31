@@ -5,15 +5,18 @@ function Features() {
     <div className={"Features-div"}>
       <Feature
         title={"Creativity"}
-        text={"Bringing your vision to life through expert editing."}
+        text={"Bringing your vision to life<br />through expert editing."}
       />
       <Feature
         title={"Profit"}
-        text={"Turning your engaged followers into qualified leads."}
+        text={"Turning your engaged followers<br />into qualified leads."}
+        className={"Features-middle"}
       />
       <Feature
         title={"Guarantee"}
-        text={"Payment is required only if the quality meets expectations."}
+        text={
+          "Payment is required only if the<br />quality meets expectations."
+        }
       />
     </div>
   );

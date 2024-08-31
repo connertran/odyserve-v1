@@ -19,7 +19,20 @@
 
 .Feature-h1 {
   font-family: Inter;
-  color: white;
+  background: linear-gradient(
+    0deg,
+    rgba(153, 81, 247, 1) 0%,
+    rgba(191, 145, 250, 1) 65%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  /* Clip the background to the text */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Make the text transparent so the background shows through */
+  color: transparent;
+
   font-size: 18px;
   text-align: center;
 }
@@ -28,5 +41,44 @@
   font-family: Inter;
   color: white;
   font-size: 14px;
+  line-height: 2;
   text-align: center;
+}
+
+@media (min-width: 630px) {
+  .Feature-div {
+    width: 420px;
+    padding: 0;
+  }
+  .Feature-p {
+    font-size: 16px;
+  }
+  .Feature-h1 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 760px) {
+  .Feature-div {
+    padding: 0 10px;
+    width: 200px;
+    height: 114px;
+  }
+  .Feature-p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .Feature-div {
+    padding: 0 10px;
+    width: 250px;
+    height: 142.5px;
+  }
+  .Feature-p {
+    font-size: 16px;
+  }
+  .Feature-h1 {
+    font-size: 22px;
+  }
 }
