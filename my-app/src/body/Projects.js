@@ -34,7 +34,7 @@ function Projects() {
         <div
           className="carousel"
           style={{
-            transform: `translateX(calc(-${currentIndex * 180}px + 32%))`,
+            transform: `translateX(calc(-${currentIndex * 180}px + 33%))`,
           }}
         >
           {videos.map((url, index) => (

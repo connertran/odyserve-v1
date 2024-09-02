@@ -1,20 +1,21 @@
 .Features-div {
-  border: solid black 2px;
+  /* border: solid black 2px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 50px;
   padding: 0 20px;
 }
 @media (min-width: 630px) {
   .Features-div {
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 40px;
   }
 }
 @media (min-width: 760px) {
   .Features-div {
+    margin-top: 30px;
     flex-direction: row;
     justify-content: center;
   }
@@ -26,7 +27,7 @@
 
 @media (min-width: 1025px) {
   .Features-middle {
-    margin-left: 45px;
-    margin-right: 45px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
 }

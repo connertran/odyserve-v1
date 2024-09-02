@@ -6,12 +6,12 @@ function Calendly() {
   const [calendlyMarginTop, setCalendlyMarginTop] = useState("0px");
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 673) {
+      if (window.innerWidth <= 669) {
         setCalendlyHeight("900px");
         setCalendlyMarginTop("30px");
       } else if (window.innerWidth <= 1023) {
-        setCalendlyHeight("1000px");
-        setCalendlyMarginTop("0px");
+        setCalendlyHeight("1100px");
+        setCalendlyMarginTop("-20px");
       } else {
         setCalendlyHeight("800px");
         setCalendlyMarginTop("0px");
