@@ -88,6 +88,12 @@
   .Projects-div {
     margin-top: 100px;
   }
+  .Projects-prev-btn {
+    left: 40%;
+  }
+  .Projects-next-btn {
+    right: 40%;
+  }
 }
 
 @media (min-width: 680px) {
@@ -102,5 +108,14 @@
   }
   .carousel-controls {
     margin-top: 10px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .Projects-prev-btn {
+    left: 30%;
+  }
+  .Projects-next-btn {
+    right: 30%;
   }
 }

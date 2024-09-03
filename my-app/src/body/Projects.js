@@ -1,10 +1,26 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Short from "./Short";
+import { motion, useAnimation, useInView } from "framer-motion";
 import "./Projects.css";
 
 function Projects() {
   const [currentIndex, setCurrentIndex] = useState(1);
   const [vidStyleNum, setVidStyleNum] = useState(2);
+  const [delayPassed, setDelayPassed] = useState(false);
+
+  const controls = useAnimation();
+  const ref = useRef(null);
+
+  // Delay logic
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDelayPassed(true);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  const isInView = useInView(ref, { triggerOnce: true, amount: 0.1 });
 
   const videos = [
     "https://odyserve.eu-central-1.linodeobjects.com/rich-kid-compare.mp4",
@@ -28,8 +44,27 @@ function Projects() {
     });
   };
 
+  // Animation logic
+  useEffect(() => {
+    if (delayPassed && isInView) {
+      controls.start({
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        transition: { duration: 0.8, ease: "easeOut" },
+      });
+    } else if (delayPassed) {
+      controls.start({ opacity: 0, y: 50, scale: 0.8 });
+    }
+  }, [isInView, controls, delayPassed]);
+
   return (
-    <div className="Projects-div">
+    <motion.div
+      ref={ref}
+      className="Projects-div"
+      initial={{ opacity: 0, y: 50, scale: 0.8 }}
+      animate={controls}
+    >
       <div className="carousel-wrapper">
         <div
           className="carousel"
@@ -61,7 +96,7 @@ function Projects() {
           ❯
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

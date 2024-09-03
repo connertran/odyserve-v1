@@ -1,9 +1,19 @@
+import { motion } from "framer-motion";
 import { InlineWidget } from "react-calendly";
 import { useState, useEffect } from "react";
 import "./Calendly.css";
+
 function Calendly() {
   const [calendlyHeight, setCalendlyHeight] = useState("1000px");
   const [calendlyMarginTop, setCalendlyMarginTop] = useState("0px");
+  const variants = {
+    hidden: { opacity: 0, y: 100 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 1, delay: 1 },
+    },
+  };
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 669) {
@@ -30,7 +40,12 @@ function Calendly() {
     };
   }, []);
   return (
-    <div className="Calendly-div">
+    <motion.div
+      className="Calendly-div"
+      initial="hidden"
+      animate="visible"
+      variants={variants}
+    >
       <h1 className="Calendly-h1">Business Discussion</h1>
       <h3 className="Calendly-h3">Free 15-min Call</h3>
       <div
@@ -46,7 +61,7 @@ function Calendly() {
           url="https://calendly.com/conner-tran/15min"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }
 
