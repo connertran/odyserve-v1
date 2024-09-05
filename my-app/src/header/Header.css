@@ -54,7 +54,7 @@
   .Header-div {
     flex-direction: row;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 50px;
   }
   .Header-video {
     width: 360px;
@@ -73,7 +73,7 @@
   .Header-div {
     flex-direction: row;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 50px;
   }
   .Header-video {
     width: 460px;

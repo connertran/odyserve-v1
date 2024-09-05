@@ -2,11 +2,10 @@
   /* border: solid white 1px; */
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 20px;
   height: 100px;
-  /* padding-bottom: 20px; */
   background-color: black;
 }
 
@@ -16,7 +15,7 @@
   flex-direction: row;
   align-items: flex-end;
   height: 30px;
-  margin-right: 10px;
+  margin-left: 70px;
 }
 .Footer-icon {
   color: white;
@@ -26,9 +25,27 @@
 
 .Footer-logo {
   width: 50px;
-  margin-left: 10px;
+  margin-right: 70px;
   border: solid white 2px;
   border-radius: 40px;
+}
+
+@media (min-width: 500px) {
+  .Footer-logo {
+    margin-right: 120px;
+  }
+  .Footer-icon-div {
+    margin-left: 120px;
+  }
+}
+
+@media (min-width: 630px) {
+  .Footer-logo {
+    margin-right: 200px;
+  }
+  .Footer-icon-div {
+    margin-left: 200px;
+  }
 }
 @media (min-width: 670px) {
   .Footer-div {
@@ -38,26 +55,26 @@
 @media (min-width: 680px) {
   .Footer-logo {
     width: 60px;
-    margin-left: 30px;
+    margin-right: 210px;
   }
   .Footer-icon {
     font-size: 33.6px;
   }
   .Footer-icon-div {
-    margin-right: 30px;
+    margin-left: 210px;
   }
 }
 
 @media (min-width: 760px) {
   .Footer-logo {
     width: 70px;
-    margin-left: 50px;
+    margin-right: 225px;
   }
   .Footer-icon {
     font-size: 39.2px;
   }
   .Footer-icon-div {
-    margin-right: 50px;
+    margin-left: 225px;
   }
 }
 
@@ -75,12 +92,12 @@
 @media (min-width: 1025px) {
   .Footer-logo {
     width: 70px;
-    margin-left: 80px;
+    margin-right: 350px;
   }
   .Footer-icon {
     font-size: 39.2px;
   }
   .Footer-icon-div {
-    margin-right: 80px;
+    margin-left: 350px;
   }
 }
