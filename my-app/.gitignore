@@ -24,3 +24,6 @@ yarn-error.log*
 
 #secret
 secretInfo.js
+
+#testing
+__snapshots__
