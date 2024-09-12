@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/odyserve/static/css/main.478729f9.css",
+    "main.js": "/odyserve/static/js/main.882bc81e.js",
+    "static/js/453.ed3810f9.chunk.js": "/odyserve/static/js/453.ed3810f9.chunk.js",
+    "static/media/logo-letter.png": "/odyserve/static/media/logo-letter.c4f900b589f70986e36f.png",
+    "index.html": "/odyserve/index.html",
+    "main.478729f9.css.map": "/odyserve/static/css/main.478729f9.css.map",
+    "main.882bc81e.js.map": "/odyserve/static/js/main.882bc81e.js.map",
+    "453.ed3810f9.chunk.js.map": "/odyserve/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.478729f9.css",
+    "static/js/main.882bc81e.js"
+  ]
+}
